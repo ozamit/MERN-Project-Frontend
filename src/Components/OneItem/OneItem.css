@@ -1,0 +1,11 @@
+.CardActionArea{
+    cursor: default !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 15px 0 0 0 !important;
+
+}
+
+.CardMedia {
+    width: 220px !important;
+}

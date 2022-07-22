@@ -1,0 +1,55 @@
+.homeWrapper {
+    /* background-image: url("https://img.freepik.com/free-vector/abstract-duotone-background-with-motion-lines-effect_1017-30154.jpg?t=st=1658224655~exp=1658225255~hmac=6fc87c0f9b15ef070d8ec0c1a2ee3c5af92e6a516b015c226a0bf8ea4d42a728&w=1060");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.toolbarWrapper {
+display: flex;
+justify-content: space-between !important;
+}
+
+.userBTN {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.username {
+    margin: 0 0 0 10px;
+    color: white
+}
+
+.Divider {
+    margin: 2px 0 0 0 !important;
+}
+
+.cartItemsCounter {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #ffc107;
+padding: 0.5em 0.5em 0.5em;
+border-radius: 50%;
+height: 30px;
+width: 30px;
+}
+
+.searchTextFieldWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 0 0;
+}
+
+.categoryTitle {
+    margin: 30px 0 20px 0;
+}
+
+.searchBTN {
+    margin: 15px 0 0 0 !important;
+    width: 85% !important;
+}

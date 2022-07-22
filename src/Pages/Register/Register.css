@@ -1,0 +1,70 @@
+
+.registerFormWrapper {
+    background-image: url("https://img.freepik.com/free-vector/abstract-duotone-background-with-motion-lines-effect_1017-30154.jpg?t=st=1658224655~exp=1658225255~hmac=6fc87c0f9b15ef070d8ec0c1a2ee3c5af92e6a516b015c226a0bf8ea4d42a728&w=1060");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.registerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 85vh;
+    width: 90vh;
+    padding: 6vh 10vh;
+    border-radius: 3%;
+}
+
+.formTitle {
+display:flex;
+justify-content: center;
+margin: 0 0 50px 0;
+}
+
+.sectionTitle {
+    display:flex;
+    justify-content: center;
+    font-size: 22px;
+    margin: 20px 0 20px 0;
+    }
+
+.formErrorMsg {
+    color: red;
+    background-color: rgb(255, 227, 227);
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid red;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.RegisterTextField {
+    margin: 0 10px 0 0 !important;
+}
+
+.RegisterBtn {
+margin: 30px 0 0 0 !important;
+width: 200px !important;
+}
+
+.goToLogin {
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    font-size: 18px;
+    margin: 25px 0;
+}

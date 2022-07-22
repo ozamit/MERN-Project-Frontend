@@ -1,0 +1,11 @@
+
+.sectionTitle {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px 0;
+}
+
+.submitCategoryBtn {
+    margin: 0 20px;
+    height: 55px !important;
+}

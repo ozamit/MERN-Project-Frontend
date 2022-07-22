@@ -1,0 +1,9 @@
+.MainShopComponentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.noResultsTitle{
+    margin: 50px 0 150px 0;
+}

@@ -1,0 +1,41 @@
+.ItemInCartWrapper {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.ListOfItemInCart {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemImg {
+    width: 70px;
+    margin: 0 30px 0 0;
+}
+
+.itemNameAndPriceWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.itemName {
+width: 250px;
+font-size: 22px;
+}
+
+.itemPrice {
+    font-size: 18px;
+    }
+
+.iconSet {
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    font-size: 20px !important;
+}

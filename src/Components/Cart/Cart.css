@@ -1,0 +1,15 @@
+.cartWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.itemsWrapper { 
+    display: flex;
+    flex-direction: column;
+}
+
+.sumTotal {
+    font-size: 30px;
+    margin: 20px 0 0 0;
+
+}
