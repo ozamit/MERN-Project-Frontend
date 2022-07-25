@@ -64,7 +64,7 @@ const CheckOut = () => {
                 const res = await axios.put(`${localhost}/order/newOrder`, { orderData });
                 console.log("res", res);
           
-                if(res.status === 200) {
+                if(res.status === 201) {
                 console.log("success");
                 navigate("/")
                 }
