@@ -78,7 +78,6 @@ const MainShopComponent = ({ categoryFilter, itemsFromSearch, notificationMsg })
 
   return (
     <div className="MainShopComponentWrapper">
-      <Button onClick={mirrorDB}>test</Button>
       {noSearchResults && 
       <div className="noResultsTitle">
         <h1>NO SEARCH RESULTS</h1>
