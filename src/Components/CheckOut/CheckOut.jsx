@@ -58,7 +58,6 @@ const CheckOut = ({ notificationMsg }) => {
         }
         console.log(orderData);
 
-        // if (formError === "") {
             try {
                 console.log("axios");
                 const res = await axios.put(`${localhost}/order/newOrder`, { orderData });
@@ -73,16 +72,11 @@ const CheckOut = ({ notificationMsg }) => {
               } catch(err) {
                 console.log(err);
               }
-        //   };
-        }
         
-<<<<<<< HEAD
-=======
             try {
                 console.log("axios");
                 const res = await axios.put(`${localhost}/order/newOrder`, { orderData });
                 console.log("res", res);
-          
                 if(res.status === 200) {
                 console.log("success");
                 navigate("/")
@@ -93,7 +87,6 @@ const CheckOut = ({ notificationMsg }) => {
               }
 
       };
->>>>>>> dc30db4beafca4b01ba5efa68fcc5a242daf1d38
 
   return (
     <div>
@@ -165,6 +158,6 @@ const CheckOut = ({ notificationMsg }) => {
         </form>
     </div>
   )
-}
+  }
 
 export default CheckOut
