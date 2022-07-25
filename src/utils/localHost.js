@@ -1,1 +1,1 @@
-export const localhost = "http://localhost:7000";
+export const localhost = "https://fft-project.herokuapp.com";

@@ -22,10 +22,10 @@ const cartSlice = createSlice({
       async function addItemToCart() {
         try {
           const res = await axios.put(
-            "http://localhost:7000/cart/AddItemToCart",
+            `${localhost}/cart/AddItemToCart`,
             actionData
           );
-          // console.log("res", res);
+          console.log("res", res);
         } catch (error) {
           console.log("error: ", error);
         }
