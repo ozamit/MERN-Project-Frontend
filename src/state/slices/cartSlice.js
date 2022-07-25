@@ -22,10 +22,10 @@ const cartSlice = createSlice({
       async function addItemToCart() {
         try {
           const res = await axios.put(
-            "http://localhost:7000/cart/AddItemToCart",
+            `${localhost}/cart/AddItemToCart`,
             actionData
           );
-          // console.log("res", res);
+          console.log("res", res);
         } catch (error) {
           console.log("error: ", error);
         }
@@ -100,7 +100,7 @@ const cartSlice = createSlice({
       async function changeQuantity() {
         try {
           const res = await axios.put(
-            "http://localhost:7000/cart/changeQuantity",
+            `${localhost}/cart/changeQuantity`,
             actionData
           );
           console.log("res", res);
@@ -125,7 +125,7 @@ const cartSlice = createSlice({
       async function removeFromCart() {
         try {
           const res = await axios.put(
-            "http://localhost:7000/cart/removeFromCart",
+            `${localhost}/cart/removeFromCart`,
             actionData
           );
           console.log("res", res);
