@@ -58,13 +58,12 @@ const CheckOut = () => {
         }
         console.log(orderData);
         
-//         if (formError === "") {
             try {
                 console.log("axios");
                 const res = await axios.put(`${localhost}/order/newOrder`, { orderData });
                 console.log("res", res);
           
-                if(res.status === 201) {
+                if(res.status === 200) {
                 console.log("success");
                 navigate("/")
                 }
@@ -72,7 +71,7 @@ const CheckOut = () => {
               } catch(err) {
                 console.log(err);
               }
-//           };
+
       };
 
   return (
