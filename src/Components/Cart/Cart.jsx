@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import Divider from '@mui/material/Divider';
 
 
-const Cart = () => {
+const Cart = ({ notificationMsg }) => {
 
   const cart = useSelector((state) => state.cart.data);
   
@@ -26,11 +26,14 @@ const Cart = () => {
   return (
     <div className="cartWrapper">
       <div className="itemsWrapper">
+        {(cart.length < 1 &&
+         <img className="emptyCartImg" alt="empty cart" src="https://media.istockphoto.com/vectors/empty-shopping-bag-icon-cute-disappointed-shopping-bag-flat-thin-line-vector-id841884438?b=1&k=20&m=841884438&s=170667a&w=0&h=cmsC4f-WyIcgDIPNTjjXtam0kWoaAB6MJyIgrK0NaGE="></img>
+        )}
         <ItemInCart className="ItemsListInCart" />
         <Divider />
         <div className="sumTotal">$ {sumTotal}</div>
       </div>
-      <CheckOut />
+      <CheckOut notificationMsg={notificationMsg}/>
     </div>
   
   )

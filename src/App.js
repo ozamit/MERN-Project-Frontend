@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Register from "./Pages/Register/Register";
 import Login from "./Pages/Login/Login";
+import ThankYou from "./Pages/ThankYou/ThankYou";
 
 import Snackbar from "@mui/material/Snackbar";
 import IconButton from "@mui/material/IconButton";
@@ -61,6 +62,7 @@ function App() {
             path="/login"
             element={<Login notificationMsg={notificationMsg} />}
           />
+          <Route path="/thankyou" element={<ThankYou />} />
         </Routes>
         <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
           <Alert

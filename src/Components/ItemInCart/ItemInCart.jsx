@@ -37,8 +37,8 @@ function handleRemoveFromCart(itemId) {
     <div className="ItemInCartWrapper">
         {cart.map((item, index) => {
             return (
-            <List className="ListOfItemInCart" key={index} sx={{ width: '100%', maxWidth: 350, bgcolor: 'background.paper' }}>
-            <ListItem alignItems="flex-start">
+            <List className="ListOfItemInCart" key={index} >
+            <ListItem alignItems="flex-start" className="ListOfItem">
                 <img className="itemImg" src={item.img} alt={item.itemName}/>
 
                     <div className="itemNameAndPriceWrapper">
@@ -52,11 +52,11 @@ function handleRemoveFromCart(itemId) {
 
                 <p className="quantity">{item.quantity}</p>
 
-                <IconButton size="large" onClick={() => handleChangeQuantity("removeOne", item.itemId, item.price)} aria-label="removeOne">
+                <IconButton size="md" onClick={() => handleChangeQuantity("removeOne", item.itemId, item.price)} aria-label="removeOne">
                     <RemoveCircleIcon />
                 </IconButton>
 
-                <IconButton size="large" onClick={() => handleRemoveFromCart(item.itemId)} aria-label="delete">
+                <IconButton size="md" onClick={() => handleRemoveFromCart(item.itemId)} aria-label="delete">
                     <DeleteIcon />
                 </IconButton>
 

@@ -4,14 +4,14 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from "react-redux";
+import { localhost } from '../../utils/localHost'
 // MUI
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
-import { localhost } from '../../utils/localHost'
 
-const CheckOut = () => {
+const CheckOut = ({ notificationMsg }) => {
 
     const user = useSelector((state) => state.user.data);
     const cart = useSelector((state) => state.cart.data);
@@ -57,50 +57,58 @@ const CheckOut = () => {
             cart
         }
         console.log(orderData);
+
+        // if (formError === "") {
+            try {
+                console.log("axios");
+                const res = await axios.put(`${localhost}/order/newOrder`, { orderData });
+                console.log("res", res);
+          
+                if(res.status === 200) {
+                console.log("success");
+                notificationMsg("Your order has been placed!", "success")
+                navigate("/thankyou")
+                }
+          
+              } catch(err) {
+                console.log(err);
+              }
+        //   };
+        }
         
-        try {
-            console.log("axios");
-            const res = await axios.put(`${localhost}/order/newOrder`, { orderData });
-            console.log("res", res);
-      
-            if(res.status === 200) {
-            console.log("success");
-            navigate("/")
-            }
-      
-          } catch(err) {
-            console.log(err);
-          }
-      };
 
   return (
     <div>
         <form onSubmit={handleSubmit(onSubmit)}>
-            <Box className="loginBox"
-                sx={{ '& > :not(style)': { m: 1, width: '30ch' }, }}
+            <Box className="checkoutBox"
+                sx={{ '& > :not(style)': { m: 1, width: '20ch' }, }}
                 noValidate >
 
                 <h3 className="formTitle">CheckOut</h3>
                 {formError && <p>{formError}</p>}
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     id="fullName"
                     label="Full Name"
                     variant="outlined"
                     {...register("fullName", { required: true })}
                     />
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     id="city"
                     label="City"
                     variant="outlined"
                     {...register("city", { required: true })}
                     />
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     id="street"
                     label="Street"
                     variant="outlined"
                     {...register("street", { required: true })}
                     />
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     id="creditCardNumber"
                     label="Credit Card Number"
                     variant="outlined"
@@ -108,6 +116,7 @@ const CheckOut = () => {
                     />
                     <div className="expirationDateWrapper">
                         <TextField
+                        InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                         type="number"
                         inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
                         sx={{ width: "48%" }}
@@ -119,6 +128,7 @@ const CheckOut = () => {
                         </TextField>
                         
                         <TextField
+                        InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                         sx={{ width: "47%" }}
                         id="year"
                         label="Year"

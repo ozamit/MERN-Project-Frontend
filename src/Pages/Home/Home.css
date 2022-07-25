@@ -1,11 +1,3 @@
-.homeWrapper {
-    /* background-image: url("https://img.freepik.com/free-vector/abstract-duotone-background-with-motion-lines-effect_1017-30154.jpg?t=st=1658224655~exp=1658225255~hmac=6fc87c0f9b15ef070d8ec0c1a2ee3c5af92e6a516b015c226a0bf8ea4d42a728&w=1060");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
-}
 
 .toolbarWrapper {
 display: flex;
@@ -18,8 +10,7 @@ justify-content: space-between !important;
 }
 
 .username {
-    margin: 0 0 0 10px;
-    color: white
+cursor: default !important;
 }
 
 .Divider {
@@ -43,6 +34,7 @@ width: 30px;
     align-items: center;
     justify-content: center;
     margin: 15px 0 0 0;
+    padding: 10px !important;
 }
 
 .categoryTitle {
@@ -51,5 +43,5 @@ width: 30px;
 
 .searchBTN {
     margin: 15px 0 0 0 !important;
-    width: 85% !important;
+    width: 100% !important;
 }

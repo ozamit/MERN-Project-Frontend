@@ -59,8 +59,7 @@ const onSubmit = async (data) => {
   return (
       <div className="loginFormWrapper">
         <form onSubmit={handleSubmit(onSubmit)}>
-            <Box className="loginBox"
-                noValidate>
+            <Box className="loginBox" noValidate>
                 <h3 className="formTitle">Login</h3>
                 {errors?.username && <p className="formErrorMsg">All fields are required</p>}
                 {formError && <p className="formErrorMsg">{formError}</p>}

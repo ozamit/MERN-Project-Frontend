@@ -72,6 +72,7 @@ let navigate = useNavigate()
                 <h3 className="sectionTitle">Nice to meet you :)</h3>
                 <div className="registerFormFieldsGroup">
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     className="RegisterTextField"
                     id="firstName"
                     label="First Name"
@@ -79,6 +80,7 @@ let navigate = useNavigate()
                     {...register("firstName", { required: true })}
                     />
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     className="RegisterTextField"
                     id="lastName"
                     label="Last Name"
@@ -89,6 +91,7 @@ let navigate = useNavigate()
                 <h3 className="sectionTitle">Shipping details</h3>
                 <div className="registerFormFieldsGroup">
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     className="RegisterTextField"
                     id="email"
                     label="email"
@@ -97,6 +100,7 @@ let navigate = useNavigate()
                     onChange={handleInputChange}
                     />
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     className="RegisterTextField"
                     id="city"
                     label="City"
@@ -104,6 +108,7 @@ let navigate = useNavigate()
                     {...register("city")}
                     />
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     className="RegisterTextField"
                     id="street"
                     label="Street"
@@ -114,6 +119,7 @@ let navigate = useNavigate()
                 <h3 className="sectionTitle">User details</h3>
                 <div className="registerFormFieldsGroup">
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     className="RegisterTextField"
                     id="username"
                     label="Username"
@@ -121,6 +127,7 @@ let navigate = useNavigate()
                     {...register("username")}
                     />
                     <TextField
+                    InputProps={{ style: { height: 45 } }} InputLabelProps={{ style: { fontSize: 10 } }}
                     className="RegisterTextField"
                     id="password"
                     label="Password"

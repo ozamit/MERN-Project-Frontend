@@ -36,7 +36,7 @@ import Button from '@mui/material/Button';
 import LoginIcon from '@mui/icons-material/Login';
 import LogoutIcon from '@mui/icons-material/Logout';
 
-const drawerWidth = 260;
+const drawerWidth = 220;
 
 const Home = ( { notificationMsg } ) => {
 
@@ -152,12 +152,12 @@ const Home = ( { notificationMsg } ) => {
         <Box sx={{ overflow: 'auto' }}>
           <List>
             {user.username && 
-            <ListItem disablePadding >
-                <ListItemButton>
+            <ListItem disablePadding>
+                <ListItemButton className="username">
                   <ListItemIcon>
                     <AccountCircleIcon />
                   </ListItemIcon>
-                  <ListItemText primary={user.username} />
+                  <ListItemText secondary={user.username} />
                 </ListItemButton>
               </ListItem>
             }
@@ -167,7 +167,7 @@ const Home = ( { notificationMsg } ) => {
                   <ListItemIcon>
                     <ShoppingCartIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Cart" />
+                  <ListItemText secondary="Cart" />
                   {cart.length > 0 && 
                     <div className="cartItemsCounter">{countItemsInCart}</div>
                   }
@@ -180,7 +180,7 @@ const Home = ( { notificationMsg } ) => {
                     <ListItemIcon>
                       <ManageAccountsIcon />
                     </ListItemIcon>
-                    <ListItemText primary="Management Area" />
+                    <ListItemText secondary="Management Area" />
                   </ListItemButton>
                 </ListItem>
               }
@@ -205,7 +205,7 @@ const Home = ( { notificationMsg } ) => {
                   <ListItemIcon>
                     <SportsSoccerIcon />
                   </ListItemIcon>
-                  <ListItemText primary={category.name} />
+                  <ListItemText className="ListItemText" secondary={category.name} />
                 </ListItemButton>
               </ListItem>
             ))}

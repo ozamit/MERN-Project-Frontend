@@ -1,10 +1,16 @@
+.checkoutBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 .expirationDateWrapper {
 /* width: 100% !important; */
 display: flex !important;
 justify-content: space-between;
 margin: 10px 0 !important;
-}
-
-.submitBtn {
-    width: 90% !important;
 }

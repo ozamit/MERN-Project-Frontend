@@ -39,16 +39,16 @@ function addToCart(item, userId) {
           alt={`${item.name} shirt img`}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="body1" component="div">
             {item.name}
           </Typography>
-          <Typography variant="h6" color="text.secondary">
+          <Typography variant="body2" color="text.secondary">
             ${item.price}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button onClick={() => addToCart(item, user.id)} size="large" color="primary" endIcon={<AddShoppingCartIcon />}>
+      <CardActions className="CardAction">
+        <Button onClick={() => addToCart(item, user.id)} size="sm" variant="outlined" color="primary" endIcon={<AddShoppingCartIcon />}>
           Add to cart
         </Button>
       </CardActions>
