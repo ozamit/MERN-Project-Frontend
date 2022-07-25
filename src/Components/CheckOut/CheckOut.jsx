@@ -76,6 +76,24 @@ const CheckOut = ({ notificationMsg }) => {
         //   };
         }
         
+<<<<<<< HEAD
+=======
+            try {
+                console.log("axios");
+                const res = await axios.put(`${localhost}/order/newOrder`, { orderData });
+                console.log("res", res);
+          
+                if(res.status === 200) {
+                console.log("success");
+                navigate("/")
+                }
+          
+              } catch(err) {
+                console.log(err);
+              }
+
+      };
+>>>>>>> dc30db4beafca4b01ba5efa68fcc5a242daf1d38
 
   return (
     <div>
