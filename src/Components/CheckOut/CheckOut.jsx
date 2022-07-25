@@ -58,7 +58,7 @@ const CheckOut = () => {
         }
         console.log(orderData);
         
-        if (formError === "") {
+//         if (formError === "") {
             try {
                 console.log("axios");
                 const res = await axios.put(`${localhost}/order/newOrder`, { orderData });
@@ -72,7 +72,7 @@ const CheckOut = () => {
               } catch(err) {
                 console.log(err);
               }
-          };
+//           };
       };
 
   return (
